@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "qr-code-python"
+version = "1.0.0"
+description = "This Project is an api for a QR Code Scanner App to help store and load User information including history and authentication"
+authors = ["Joshua Owolabi"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+postgres = "^4.0"
+flask-jwt-extended = "^4.6.0"
+gunicorn = "^21.2.0"
+gevent = "^24.2.1"
+flask-sqlalchemy = "^3.1.1"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+flask-mail = "^0.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
