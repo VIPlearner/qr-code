@@ -41,7 +41,7 @@ def send_verification_mail(mail: Mail, email: str, secret_key: str, salt: str):
 def send_password_verification_mail(mail: Mail, email: str, secret_key: str, salt: str):
     token = generate_verification_token(email, secret_key, salt)
 
-    msg = Message('Email Verification Request',
+    msg = Message('Password Verification Request',
                   sender=EMAIL_USER,
                   recipients=[email])
 
@@ -50,4 +50,4 @@ def send_password_verification_mail(mail: Mail, email: str, secret_key: str, sal
 
     mail.send(msg)
 
-    return 'Email verification has been sent.'
+    return 'Password verification email has been sent.'
